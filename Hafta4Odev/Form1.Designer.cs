@@ -106,6 +106,7 @@
             button1.TabIndex = 19;
             button1.Text = "Ekle";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Durum
             // 
