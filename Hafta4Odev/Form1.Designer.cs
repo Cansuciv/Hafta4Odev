@@ -32,7 +32,7 @@
             label8 = new Label();
             button1 = new Button();
             Durum = new TextBox();
-            RafladigiYer = new TextBox();
+            RaflandigiYer = new TextBox();
             Dil = new TextBox();
             SayfaSayisi = new TextBox();
             KitapTuru = new TextBox();
@@ -63,7 +63,7 @@
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(Durum);
-            groupBox1.Controls.Add(RafladigiYer);
+            groupBox1.Controls.Add(RaflandigiYer);
             groupBox1.Controls.Add(Dil);
             groupBox1.Controls.Add(SayfaSayisi);
             groupBox1.Controls.Add(KitapTuru);
@@ -115,12 +115,12 @@
             Durum.Size = new Size(365, 34);
             Durum.TabIndex = 18;
             // 
-            // RafladigiYer
+            // RaflandigiYer
             // 
-            RafladigiYer.Location = new Point(173, 480);
-            RafladigiYer.Name = "RafladigiYer";
-            RafladigiYer.Size = new Size(365, 34);
-            RafladigiYer.TabIndex = 17;
+            RaflandigiYer.Location = new Point(173, 480);
+            RaflandigiYer.Name = "RaflandigiYer";
+            RaflandigiYer.Size = new Size(365, 34);
+            RaflandigiYer.TabIndex = 17;
             // 
             // Dil
             // 
@@ -285,6 +285,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(475, 312);
             listBox1.TabIndex = 0;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // button3
             // 
@@ -319,7 +320,7 @@
         private Label label8;
         private Button button1;
         private TextBox Durum;
-        private TextBox RafladigiYer;
+        private TextBox RaflandigiYer;
         private TextBox Dil;
         private TextBox SayfaSayisi;
         private TextBox KitapTuru;

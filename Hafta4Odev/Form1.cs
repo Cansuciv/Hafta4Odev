@@ -19,7 +19,7 @@ namespace Hafta4Odev
         List<string> Liste_KitapTuru = new List<string>();
         List<string> Liste_SayfaSayisi = new List<string>();
         List<string> Liste_Dil = new List<string>();
-        List<string> Liste_RafladigiYer = new List<string>();
+        List<string> Liste_RaflandigiYer = new List<string>();
         List<string> Liste_Durum = new List<string>();
         int sayac = 0;
 
@@ -33,9 +33,12 @@ namespace Hafta4Odev
             Liste_KitapTuru.Add(KitapTuru.Text);
             Liste_SayfaSayisi.Add(SayfaSayisi.Text);
             Liste_Dil.Add(Dil.Text);
-            Liste_RafladigiYer.Add(RafladigiYer.Text);
+            Liste_RaflandigiYer.Add(RaflandigiYer.Text);
             Liste_Durum.Add(Durum.Text);
 
+            sayac++;
+            listBox1.Items.Clear();
+            comboBox1.Items.Clear();
 
             for (int i = 0; i < sayac; i++)
             {
@@ -56,6 +59,28 @@ namespace Hafta4Odev
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int sayac2 = listBox1.SelectedIndex;
+            if (sayac2 >= 0 && sayac < Liste_KitapAdi.Count)
+            {
+                string KitapBilgileri = "Kitap Adý: " + Liste_KitapAdi[sayac2] + Environment.NewLine +
+                                        "Kitap Yazarý: " + Liste_KitapYazari[sayac2] + Environment.NewLine +
+                                        "Yayýnevi: " + Liste_Yayinevi[sayac2] + Environment.NewLine +
+                                        "Yayýn Tarihi: " + Liste_YayinTarihi[sayac2] + Environment.NewLine +
+                                        "Kitap Türü: " + Liste_KitapTuru[sayac2] + Environment.NewLine +
+                                        "Sayfa Sayýsý: " + Liste_SayfaSayisi[sayac2] + Environment.NewLine +
+                                        "Dil: " + Liste_Dil[sayac2] + Environment.NewLine +
+                                        "Raflandýðý Yer: " + Liste_RaflandigiYer[sayac2] + Environment.NewLine +
+                                        "Durum: " + Liste_Durum[sayac2];
+
+                MessageBox.Show(KitapBilgileri, "Kitap Bilgileri");
+
+            }
+
+
         }
     }
 }
