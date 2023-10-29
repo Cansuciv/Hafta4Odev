@@ -275,6 +275,7 @@
             button2.TabIndex = 2;
             button2.Text = "Temizle";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // listBox1
             // 
@@ -293,6 +294,7 @@
             button3.TabIndex = 7;
             button3.Text = "KAPAT";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 
