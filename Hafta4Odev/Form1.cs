@@ -1,3 +1,5 @@
+using System.Security.AccessControl;
+
 namespace Hafta4Odev
 {
     public partial class Form1 : Form
@@ -43,8 +45,8 @@ namespace Hafta4Odev
             for (int i = 0; i < sayac; i++)
             {
                 string deger = Liste_KitapAdi[i] + " " + Liste_KitapYazari[i] + " " + Liste_Durum[i];
-                listBox1.Items.Clear();
-                comboBox1.Items.Clear();
+                listBox1.Items.Add(deger);
+                comboBox1.Items.Add(deger);
             }
 
 
@@ -79,7 +81,18 @@ namespace Hafta4Odev
                 MessageBox.Show(KitapBilgileri, "Kitap Bilgileri");
 
             }
+        }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = comboBox1.SelectedIndex;
+            if (selectedIndex >= 0 && selectedIndex < listBox1.Items.Count)
+            {
+                object selectedItem = listBox1.Items[selectedIndex];
+                listBox1.Items.RemoveAt(selectedIndex);
+                listBox1.Items.Insert(0, selectedItem);
+                listBox1.SelectedIndex = 0;
+            }
 
         }
     }
