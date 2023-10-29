@@ -100,16 +100,18 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.LightGreen;
             button1.Location = new Point(438, 606);
             button1.Name = "button1";
             button1.Size = new Size(146, 50);
             button1.TabIndex = 19;
             button1.Text = "Ekle";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // Durum
             // 
+            Durum.BackColor = Color.LightYellow;
             Durum.Location = new Point(173, 540);
             Durum.Name = "Durum";
             Durum.Size = new Size(365, 34);
@@ -117,6 +119,7 @@
             // 
             // RaflandigiYer
             // 
+            RaflandigiYer.BackColor = Color.LightYellow;
             RaflandigiYer.Location = new Point(173, 480);
             RaflandigiYer.Name = "RaflandigiYer";
             RaflandigiYer.Size = new Size(365, 34);
@@ -124,6 +127,7 @@
             // 
             // Dil
             // 
+            Dil.BackColor = Color.LightYellow;
             Dil.Location = new Point(173, 420);
             Dil.Name = "Dil";
             Dil.Size = new Size(365, 34);
@@ -131,6 +135,7 @@
             // 
             // SayfaSayisi
             // 
+            SayfaSayisi.BackColor = Color.LightYellow;
             SayfaSayisi.Location = new Point(173, 360);
             SayfaSayisi.Name = "SayfaSayisi";
             SayfaSayisi.Size = new Size(365, 34);
@@ -138,6 +143,7 @@
             // 
             // KitapTuru
             // 
+            KitapTuru.BackColor = Color.LightYellow;
             KitapTuru.Location = new Point(173, 300);
             KitapTuru.Name = "KitapTuru";
             KitapTuru.Size = new Size(365, 34);
@@ -145,6 +151,7 @@
             // 
             // YayinTarihi
             // 
+            YayinTarihi.BackColor = Color.LightYellow;
             YayinTarihi.Location = new Point(173, 240);
             YayinTarihi.Name = "YayinTarihi";
             YayinTarihi.Size = new Size(365, 34);
@@ -152,6 +159,7 @@
             // 
             // Yayinevi
             // 
+            Yayinevi.BackColor = Color.LightYellow;
             Yayinevi.Location = new Point(173, 180);
             Yayinevi.Name = "Yayinevi";
             Yayinevi.Size = new Size(365, 34);
@@ -159,6 +167,7 @@
             // 
             // KitapYazari
             // 
+            KitapYazari.BackColor = Color.LightYellow;
             KitapYazari.Location = new Point(173, 120);
             KitapYazari.Name = "KitapYazari";
             KitapYazari.Size = new Size(365, 34);
@@ -166,6 +175,7 @@
             // 
             // KitapAdi
             // 
+            KitapAdi.BackColor = Color.LightYellow;
             KitapAdi.Location = new Point(173, 60);
             KitapAdi.Name = "KitapAdi";
             KitapAdi.Size = new Size(365, 34);
@@ -261,6 +271,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.BackColor = Color.LightBlue;
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new Point(43, 424);
             comboBox1.Name = "comboBox1";
@@ -270,16 +281,18 @@
             // 
             // button2
             // 
+            button2.BackColor = SystemColors.InactiveCaption;
             button2.Location = new Point(381, 506);
             button2.Name = "button2";
             button2.Size = new Size(147, 47);
             button2.TabIndex = 2;
             button2.Text = "Temizle";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // listBox1
             // 
+            listBox1.BackColor = Color.MistyRose;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 28;
             listBox1.Location = new Point(43, 58);
@@ -290,18 +303,20 @@
             // 
             // button3
             // 
-            button3.Location = new Point(989, 656);
+            button3.BackColor = Color.DarkSeaGreen;
+            button3.Location = new Point(964, 639);
             button3.Name = "button3";
             button3.Size = new Size(128, 51);
             button3.TabIndex = 7;
             button3.Text = "KAPAT";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SkyBlue;
             ClientSize = new Size(1371, 719);
             Controls.Add(button3);
             Controls.Add(groupBox2);
