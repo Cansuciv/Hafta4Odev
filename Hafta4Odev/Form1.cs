@@ -63,7 +63,7 @@ namespace Hafta4Odev
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int sayac2 = listBox1.SelectedIndex;
-            if (sayac2 >= 0 && sayac < Liste_KitapAdi.Count)
+            if (sayac2 >= 0 && sayac2 < Liste_KitapAdi.Count)
             {
                 string KitapBilgileri = "Kitap Adı: " + Liste_KitapAdi[sayac2] + Environment.NewLine +
                                         "Kitap Yazarı: " + Liste_KitapYazari[sayac2] + Environment.NewLine +
