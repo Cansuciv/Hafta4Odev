@@ -25,7 +25,6 @@ namespace Hafta4Odev
         List<string> Liste_Durum = new List<string>();
         int sayac = 0;
 
-
         private void button1_Click(object sender, EventArgs e)
         {
             Liste_KitapAdi.Add(KitapAdi.Text);
@@ -48,8 +47,6 @@ namespace Hafta4Odev
                 listBox1.Items.Add(deger);
                 comboBox1.Items.Add(deger);
             }
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -79,7 +76,6 @@ namespace Hafta4Odev
                                         "Durum: " + Liste_Durum[sayac2];
 
                 MessageBox.Show(KitapBilgileri, "Kitap Bilgileri");
-
             }
         }
 
@@ -93,7 +89,6 @@ namespace Hafta4Odev
                 listBox1.Items.Insert(0, selectedItem);
                 listBox1.SelectedIndex = 0;
             }
-
         }
     }
 }
